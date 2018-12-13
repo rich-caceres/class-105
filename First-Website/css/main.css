@@ -1,0 +1,199 @@
+	
+	
+/***** BASE STYLES *****/
+
+body {
+    
+    font-family: 'Barlow Condensed', sans-serif;
+    color: #2b2b2b
+
+}
+
+#about #goals #contact{
+    
+    Height: 600px;
+    
+}
+.full-width {
+
+    width: 80%;
+	margin:0 auto;
+	padding:0;
+    float:left;
+}
+.half-width{
+
+    width: 50%;
+    float: left;
+
+}
+
+.third-width{
+
+    width: 30%;
+    float: left;
+
+}
+
+/*****Header Styling******/
+
+header {
+
+    height: 800px;
+    background: url('../img/rawpixel-678089-unsplash.png') no-repeat;
+    background-size: cover;
+}
+
+header h1 { 
+
+    padding: 65px 0 65px 260px;
+    font-size: 3.5vw;
+    font-family: 'Lobster', cursive;
+    float: left;
+    color: #b84118;
+}
+
+/*****Navigation bar Styling******/
+nav {
+	
+	list-style-type:none;
+    float:right; 
+    Padding: 108px 0 90px 0px
+	
+}
+nav ul li{
+
+    display:inline-block;
+}
+
+nav ul li a {
+
+    font-family:inherit;
+    color:#b84118;
+    font-size: 2vw;
+    font-weight: bold;
+    font-family: 'Dancing Script', cursive;
+    Margin-right:18px;
+    text-decoration: none;
+    list-style: none;
+    float: right;
+}
+
+/****styling content in about section*******/
+
+
+#about .half-width {
+
+    padding:80px 0;
+}
+#about h2{
+
+    font-family: 'Dancing Script', cursive;
+    font-size: 5vw;
+    padding-left: 220px;
+
+}
+
+#about p {
+
+    font-family:inherit;
+    font-size: 1.5vw;
+    margin-top: -50px;
+    padding-left:220px;
+    padding-right:50px;
+
+
+}
+
+#about ul{
+
+    font-family:inherit;
+    font-size: 1.5vw;
+    padding-left:240px;
+    padding-right:50px;
+
+
+}
+
+/*****styling content in Goals section******/
+
+#goals {
+  
+    text-align: center;
+    display: inline-block;
+    
+
+}
+
+#goals .full-width{
+
+    padding: 160px;
+    background: #fcad7d;
+    
+}
+
+#goals img{
+
+    padding-bottom: 30px 
+}
+#goals h3 {
+
+    font-family: 'Dancing Script', cursive;
+    font-size: 3vw;
+    line-height:5vw;
+    width:40%;
+    margin: 0 auto;
+}
+ 
+#goals p {
+
+    font-family: inherit;
+    font-size: 1.5vw;
+    line-height: 2vw;
+    padding: 0 50px;
+}
+
+/***styling contact section***/
+
+#contact-img {
+
+	max-width: 50%;
+    margin-left: 10%;
+    border: 12px solid;
+}
+
+#contact .full-width{
+
+    margin-top:-50px;
+    padding:160px;
+    background:#b4b3b3;
+
+}
+
+#contact #instagram, #contact #linkedin {
+
+    padding-left: 40px;
+    max-width:15%;
+}
+
+#contact #contact-email, #contact #email{
+
+    color:#c49075;
+    text-decoration: underline;
+    padding-right: 5px;
+    max-width:60%;
+}
+
+ #contact h2 {
+
+    font-family: 'Dancing Script', cursive;
+    font-size: 2vw;
+    line-height: 1.5vw;
+}
+
+#contact h3, #contact p{
+
+	font-family: 'Barlow Condensed', sans-serif;
+	font-size: 1.5vw;
+    line-height: 1.5vw;
+}
