@@ -1,5 +1,4 @@
-	
-	
+
 /***** BASE STYLES *****/
 
 body {
@@ -11,12 +10,12 @@ body {
 
 #about #goals #contact{
     
-    Height: 600px;
+    Height: 60vw;
     
 }
 .full-width {
 
-    width: 80%;
+    width: 79%;
 	margin:0 auto;
 	padding:0;
     float:left;
@@ -39,14 +38,14 @@ body {
 
 header {
 
-    height: 800px;
+    height: 60vw;
     background: url('../img/rawpixel-678089-unsplash.png') no-repeat;
-    background-size: cover;
+    background-size: contain;
 }
 
 header h1 { 
 
-    padding: 65px 0 65px 260px;
+    padding: 1vw 0vw 1vw 15vw;
     font-size: 3.5vw;
     font-family: 'Lobster', cursive;
     float: left;
@@ -58,7 +57,7 @@ nav {
 	
 	list-style-type:none;
     float:right; 
-    Padding: 108px 0 90px 0px
+    Padding: 3vw 0vw 20vw 0vw
 	
 }
 nav ul li{
@@ -70,10 +69,10 @@ nav ul li a {
 
     font-family:inherit;
     color:#b84118;
-    font-size: 2vw;
+    font-size: 2.3vw;
     font-weight: bold;
     font-family: 'Dancing Script', cursive;
-    Margin-right:18px;
+    Margin-right:2vw;
     text-decoration: none;
     list-style: none;
     float: right;
@@ -84,13 +83,13 @@ nav ul li a {
 
 #about .half-width {
 
-    padding:80px 0;
+    padding: 3vw 0vw;
 }
 #about h2{
 
     font-family: 'Dancing Script', cursive;
     font-size: 5vw;
-    padding-left: 220px;
+    padding-left: 15vw;
 
 }
 
@@ -98,9 +97,9 @@ nav ul li a {
 
     font-family:inherit;
     font-size: 1.5vw;
-    margin-top: -50px;
-    padding-left:220px;
-    padding-right:50px;
+    margin-top: -1vw;
+    padding-left:15vw;
+    padding-right:1vw;
 
 
 }
@@ -109,8 +108,8 @@ nav ul li a {
 
     font-family:inherit;
     font-size: 1.5vw;
-    padding-left:240px;
-    padding-right:50px;
+    padding-left:17vw;
+    padding-right:1vw;
 
 
 }
@@ -127,15 +126,17 @@ nav ul li a {
 
 #goals .full-width{
 
-    padding: 160px;
+    padding: 10.3vw;
     background: #fcad7d;
     
 }
 
 #goals img{
 
-    padding-bottom: 30px 
+    padding-bottom: 4vw;
+    width:19%; 
 }
+
 #goals h3 {
 
     font-family: 'Dancing Script', cursive;
@@ -150,7 +151,7 @@ nav ul li a {
     font-family: inherit;
     font-size: 1.5vw;
     line-height: 2vw;
-    padding: 0 50px;
+    padding: 0 3vw;
 }
 
 /***styling contact section***/
@@ -159,28 +160,28 @@ nav ul li a {
 
 	max-width: 50%;
     margin-left: 10%;
-    border: 12px solid;
+    border: 1vw solid;
 }
 
 #contact .full-width{
 
-    margin-top:-50px;
-    padding:160px;
+    margin-top:-1vw;
+    padding:10.3vw;
     background:#b4b3b3;
 
 }
 
-#contact #instagram, #contact #linkedin {
+#contact #instagram, #contact #linkedin, #contact #github {
 
-    padding-left: 40px;
+    padding-right: 1.8vw;
     max-width:15%;
 }
 
-#contact #contact-email, #contact #email{
+#contact #contact-email, #email{
 
     color:#c49075;
     text-decoration: underline;
-    padding-right: 5px;
+    padding-right: 1vw;
     max-width:60%;
 }
 
