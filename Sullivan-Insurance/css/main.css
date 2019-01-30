@@ -53,9 +53,10 @@ footer{
 
 /*Nav styling*/
 
-#nav-bar {
+.nav-bar {
 	
-    padding-left:6.5vw;
+	display: flex;
+	justify-content: center;
 	background-color:lightgray;
 	max-width: 100%;
 	height:5vw;
@@ -63,7 +64,7 @@ footer{
 } 
 
 
-#nav-bar a  {
+.nav-bar a {
 
     font-family:'Times New Roman', Times, serif;
     color:#b84118;
@@ -73,13 +74,12 @@ footer{
     font-family: 'Times New Roman', Times, serif;
     max-width: 100%;
    	text-decoration: none;
-   	display: block;
-    float: left;
+   	display: flex;
     
 }
 
 /* Hide the link that should open and close the topnav on small screens */
-#nav-bar .icon {
+.nav-bar .icon {
   display: none;
 }
 
@@ -89,9 +89,7 @@ footer{
 	color:#b84118;
 	font-size: 2.3vw;
     font-weight:bold;
-    font-family: 'Times New Roman', Times, serif;
-	border: none;
-  	outline: none;
+    font-family: 'Times New Roman', Times, serif
   	background-color:inherit;
 }
 
@@ -114,9 +112,9 @@ footer{
 }
 
 /* Style the links inside the dropdown */
-#nav-bar .dropdown-content a {
+.nav-bar .dropdown-content a {
   float: none;
-  padding: 0vw 1.84vw 1vw 2vw;
+  padding: 0vw 2.15vw 1vw 2vw;
   margin:auto;
   text-decoration: none;
   display: block;
@@ -124,7 +122,7 @@ footer{
 }
 
 /* Add a dark background on topnav links and the dropdown button on hover */
-#nav-bar a:hover, .dropdown:hover .dropbtn {
+.nav-bar a:hover, .dropdown:hover .dropbtn {
   background-color: #555;
   color: white;
 }
@@ -137,7 +135,7 @@ footer{
 
 /* Show the dropdown menu when the user moves the mouse over the dropdown button */
 .dropdown:hover .dropdown-content {
-  display: block;
+  display:block;
 }
 
 /*main content style*/
