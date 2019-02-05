@@ -1,5 +1,7 @@
 // JavaScript source code
 
+
+
 var magic8ball = {};
 magic8ball.magicAnswer = ["It is certain", "As I see it yes", "Better not tell you now", "Don't count on it"];
 $("#answer").hide();
@@ -30,5 +32,17 @@ var onClick = function () {
     magic8ball.quest(question);
     $("#8ball").effect("shake");
 };
+
+var footer = function () {
+
+    var y = new Date().getYear();
+
+    y = 1900 + y;
+
+    $("#footer").text("© RGC Tech " + y);
+
+}
+
+footer();
 
 $("#questionButton").click(onClick);
