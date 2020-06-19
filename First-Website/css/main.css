@@ -9,26 +9,6 @@ body {
 }
 
 
-.full-width {
-
-    width: 79%;
-	margin:0 auto;
-	padding:0;
-    float:left;
-}
-.half-width{
-
-    width: 50%;
-    float: left;
-
-}
-
-.third-width{
-
-    width: 30%;
-    float: left;
-
-}
 
 /*****Header Styling******/
 
@@ -81,34 +61,14 @@ nav ul li a {
 
     padding: 3vw 0vw;
 }
-#about h2{
+h2{
 
     font-family: 'Dancing Script', cursive;
-    font-size: 5vw;
-    padding-left: 15vw;
+    /*font-size: 5vw;
+    padding-left: 15vw;*/
 
 }
 
-#about p {
-
-    font-family:inherit;
-    font-size: 1.5vw;
-    margin-top: -1vw;
-    padding-left:15vw;
-    padding-right:1vw;
-
-
-}
-
-#about ul{
-
-    font-family:inherit;
-    font-size: 1.5vw;
-    padding-left:17vw;
-    padding-right:1vw;
-
-
-}
 
 /*****styling content in Goals section******/
 
@@ -127,28 +87,17 @@ nav ul li a {
     
 }
 
-#goals img{
+.container-fluid img{
 
     padding-bottom: 4vw;
-    width:19%; 
+    width:15%; 
 }
 
-#goals h3 {
-
+h3 {
     font-family: 'Dancing Script', cursive;
-    font-size: 3vw;
-    line-height:5vw;
-    width:40%;
-    margin: 0 auto;
 }
  
-#goals p {
 
-    font-family: inherit;
-    font-size: 1.5vw;
-    line-height: 2vw;
-    padding: 0 3vw;
-}
 
 /***styling contact section***/
 
@@ -167,25 +116,21 @@ nav ul li a {
 
 }
 
-#contact #instagram, #contact #linkedin, #contact #github {
-
+.container-fluid #instagram, .container-fluid #linkedin, .container-fluid #github {
     padding-right: 1.8vw;
-    max-width:15%;
+    max-width: 15%;
 }
 
-#contact #contact-email, #email{
+#contact-email, #email{
 
     color:#c49075;
     text-decoration: underline;
     padding-right: 1vw;
     max-width:60%;
 }
-
- #contact h2 {
+h2 {
 
     font-family: 'Dancing Script', cursive;
-    font-size: 2vw;
-    line-height: 1.5vw;
 }
 
 #contact h3, #contact p{
