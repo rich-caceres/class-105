@@ -87,7 +87,7 @@ h2{
     
 }
 
-.container-fluid img{
+#goals img{
 
     padding-bottom: 2vw;
     width:15%; 
@@ -103,15 +103,15 @@ h3 {
 
 #contact-img {
 
-	max-width: 50%;
+	max-width: 100%;
     margin-left: 10%;
     border: 1vw solid;
 }
 
-#contact .full-width{
+#contact {
 
     margin-top:-1vw;
-    padding:10.3vw;
+    padding:5.3vw;
     background:#b4b3b3;
 
 }
