@@ -78,7 +78,7 @@ nav {
         width: 15%;
     }
 
-h3 {
+#goals h3 {
     font-family: 'Dancing Script', cursive;
 }
 
@@ -110,7 +110,7 @@ h3 {
     max-width: 60%;
 }
 
-h2 {
+#contact h2{
     font-family: 'Dancing Script', cursive;
 }
 
