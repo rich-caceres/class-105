@@ -116,3 +116,8 @@ nav {
 #contact h3, #contact p {
     font-family: 'Barlow Condensed', sans-serif;
 }
+ 
+    /**Styling footer section**/
+footer{
+    text-align: center;
+}
