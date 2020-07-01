@@ -45,7 +45,8 @@ nav {
 
 #about {
     display: inline-block;
-    padding-left: 15vw;
+    padding-left: 10vh;
+    padding-right: 10vh;
 }
 
     #about h2 {
