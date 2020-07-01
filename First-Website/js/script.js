@@ -18,6 +18,6 @@ window.onload = function () {
             document.getElementById("date").innerHTML = "(" + timeLeft + " days left until graduation!)";
         }
         year = today.getFullYear();
-        document.getElementById("footer").innerHTML = "Created by Rich Caceres. Copyright " + year;
+        document.getElementById("footer").innerHTML = "Created by Rich C. Copyright " + year;
     };
 }
