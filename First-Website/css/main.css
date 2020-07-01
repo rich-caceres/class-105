@@ -105,6 +105,7 @@ nav {
 #contact-email, #email {
     color: #c49075;
     text-decoration: underline;
+    font-size: 3vh;
     padding-right: 1vw;
     max-width: 60%;
 }
