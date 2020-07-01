@@ -53,6 +53,12 @@ nav {
         font-size: 5vw;
     }
 
+    #about ul {
+        columns: 2;
+        -webkit-columns: 2;
+        -moz-columns: 2;
+    }
+
 
 /*****styling content in Goals section******/
 
