@@ -86,7 +86,9 @@ nav {
 
 /***styling contact section***/
 
-#contact-img {
+.slides{display: none;}
+
+.img {
     max-width: 100%;
     margin-left: 25%;
     border: 1vw solid;
