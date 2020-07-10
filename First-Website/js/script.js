@@ -10,8 +10,9 @@ window.onload = function () {
 function thisDate() {
     
     var today = new Date();
-    var gradDay = new Date("Aug 31, 2020 15:00:00").getTime();
- 
+    var gradDay = new Date("Aug 31, 2020 08:00:00").getTime();
+    //var gradDay = new Date("Jul 10, 2020 18:00:00").getTime();
+
     //sets interval to update the counter
     var countDown = setInterval(function () {
         //gets current time
@@ -34,8 +35,12 @@ function thisDate() {
             clearInterval(countDown);
             timeLeft = "(He has graduated! Congratulate him on a job well done.)";
             document.getElementById("date").innerHTML = timeLeft;
-        } else {
-            document.getElementById("date").innerHTML = "(" + day + " days " + hour + ":" + minute + ":" + second + " left until graduation!)";
+        } else if (day == 0) {
+
+            document.getElementById("date").innerHTML = "(" + hour + ":" + minute + ":" + second + " left until graduation!)";
+
+        }else {
+            document.getElementById("date").innerHTML = "(" + day + " days left until graduation!)";
         }
 
     }, 1000);
