@@ -15,7 +15,6 @@ function thisDate() {
     //holloweenDay.setFullYear(holloweenDay.getFullYear(), 9, 31);
     //var gradDay = new Date("Jul 10, 2020 18:00:00").getTime();
     if (today.getMonth() > holloweenDay.getMonth()) holloweenDay.setFullYear(holloweenDay.getFullYear() + 1, 9, 31);
- 
 
     //sets interval to update the counter
     var countDown = setInterval(function () {
@@ -49,8 +48,6 @@ function thisDate() {
         }
 
     }, 1000);
-
-
 
     //gets footer year
     var year = today.getFullYear();
