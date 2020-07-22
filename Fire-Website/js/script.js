@@ -1,9 +1,7 @@
 
 
 window.onload = function () {
-
     thisDate();
-    
 }
 
 function thisDate() {
@@ -39,12 +37,12 @@ function thisDate() {
         //creates the message being generated under time left for graduation
         if (holloweenDay == today) {
             clearInterval(countDown);
-            timeLeft = "Holloween is here. If you're visiting Salem have fun, stay safe, and come say hi to the Spooky Firefighters!";
+            timeLeft = "Halloween is here. If you're visiting Salem have fun, stay safe, and come say hi to the Spooky Firefighters!";
             document.getElementById("date").innerHTML = timeLeft;
         } else if (day <= 1) {
-            document.getElementById("date").innerHTML = "(" + hour + ":" + minute + ":" + second + " left until Holloween!)";
+            document.getElementById("date").innerHTML = "(" + hour + ":" + minute + ":" + second + " left until Halloween!)";
         } else {
-            document.getElementById("date").innerHTML = "(" + day + " days left until Holloween!)";
+            document.getElementById("date").innerHTML = "(" + day + " days left until Halloween!)";
         }
 
     }, 1000);
