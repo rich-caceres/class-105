@@ -2,7 +2,7 @@
 
 window.onload = function () {
     thisDate();
-    showSlides(slideIndex);
+    //showSlides(slideIndex);
 }
 
 function thisDate() {
@@ -11,7 +11,7 @@ function thisDate() {
     var holloweenDay = new Date()
     holloweenDay = new Date(holloweenDay.getFullYear(), 9, 31, 00, 00, 00, 000);
 
-    //holloweenDay.setFullYear(holloweenDay.getFullYear(), 9, 31);
+    //halloweenDay.setFullYear(holloweenDay.getFullYear(), 9, 31);
     //var gradDay = new Date("Jul 10, 2020 18:00:00").getTime();
     if (today.getMonth() > holloweenDay.getMonth()) holloweenDay.setFullYear(holloweenDay.getFullYear() + 1, 9, 31);
 
