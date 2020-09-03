@@ -2,7 +2,7 @@
 
 window.onload = function () {
     thisDate();
-    loader();
+
 }
 
 function thisDate() {
@@ -52,17 +52,4 @@ function thisDate() {
     var year = today.getFullYear();
    
     document.getElementById("footer").innerHTML = "Created by Rich C. Copyright " + year;
-}
-
-var load;
-function loader() {
-
-    load = setTimeout(loadDiv, 3000);
-
-}
-
-function loadDiv() {
-
-    document.getElementById("loadingContent").style.display = "none";
-    document.getElementById("carouselControl").style.display = "block";
 }
