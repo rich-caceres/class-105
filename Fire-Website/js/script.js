@@ -51,5 +51,5 @@ function thisDate() {
     //gets footer year
     var year = today.getFullYear();
    
-    document.getElementById("footer").innerHTML = "Created by Rich C. Copyright " + year;
+    //document.getElementById("footer").innerHTML = "Created by Rich C. Copyright " + year;
 }
