@@ -10,7 +10,7 @@ function thisDate() {
     var today = new Date();
     var holloweenDay = new Date()
     holloweenDay = new Date(holloweenDay.getFullYear(), 9, 31, 00, 00, 00, 000);
-
+    var shirtInStock = new Date(2020, 9, 1, 00, 00, 00, 000);
     //halloweenDay.setFullYear(holloweenDay.getFullYear(), 9, 31);
     //var gradDay = new Date("Jul 10, 2020 18:00:00").getTime();
     if (today.getMonth() > holloweenDay.getMonth()) holloweenDay.setFullYear(holloweenDay.getFullYear() + 1, 9, 31);
@@ -22,8 +22,10 @@ function thisDate() {
 
         //calculate time left until holloween
         var timeLeft;
+        var shirtsInStock;
         timeLeft = holloweenDay.getTime() - today.getTime();
-  
+        shirtsInStock = shirtInStock.getTime() - today.getTime();
+
         //equations to generate counter
         var day = Math.floor(timeLeft / (1000 * 60 * 60 * 24));
         var hour = Math.floor((timeLeft % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
@@ -38,12 +40,18 @@ function thisDate() {
         //creates the message being generated under time left for graduation
         if (holloweenDay == today) {
             clearInterval(countDown);
-            timeLeft = "Halloween is here. If you're visiting Salem have fun, stay safe, and come say hi to the Spooky Firefighters!";
+            timeLeft = "Halloween is here. If you're visiting Salem have fun, stay safe, and come say hi to the Firefighters! Please follow social distancing guidelines!";
             document.getElementById("date").innerHTML = timeLeft;
         } else if (day <= 1) {
             document.getElementById("date").innerHTML = "(" + hour + ":" + minute + ":" + second + " left until Halloween!)";
         } else {
             document.getElementById("date").innerHTML = "(" + day + " days left until Halloween!)";
+        }
+
+        if (shirtInStock == today) {
+            document.getElementById("shirtInStock").innerHTML = "The following shirts are in stock!";
+        } else {
+            document.getElementById("shirtsInStock").innerHTML = Math.floor(shirtsInStock / (1000 * 60 * 60 * 24)) + " days left until shirts are in stock.";
         }
 
     }, 1000);
