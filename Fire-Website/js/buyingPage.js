@@ -5,15 +5,15 @@ function buyingPageCounter() {
 
     var shirtCountdown = setInterval(function () {
         //gets current time and updates it every second
-        //today = new Date();
-        today = new Date(2020, 09, 2, 0, 00, 00, 000);
+        var today = new Date();
+        //FORTESTINGvar today = new Date(2021, 10, 1, 0, 00, 00, 000);
         //calculate time left until holloween
         var shirtInStock;
         shirtInStock = shirtsInStock.getTime() - today.getTime();
 
-        if (shirtInStock <= today) {
+        if (shirtsInStock.getTime() < today.getTime()) {
             clearInterval(shirtCountdown);
-            document.getElementById("shirtInStock").innerHTML = "Available Shirt Designs";
+            document.getElementById("shirtInStock").innerHTML = "Available SFD Shirt Designs";
         } else {
             document.getElementById("shirtInStock").innerHTML = Math.floor(shirtInStock / (1000 * 60 * 60 * 24)) + " days left until shirts are in stock.";
         }
