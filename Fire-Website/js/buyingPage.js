@@ -10,12 +10,15 @@ function buyingPageCounter() {
         //calculate time left until holloween
         var shirtInStock;
         shirtInStock = shirtsInStock.getTime() - today.getTime();
+        var day = Math.floor(shirtInStock / (1000 * 60 * 60 * 24));
 
         if (shirtsInStock.getTime() < today.getTime()) {
             clearInterval(shirtCountdown);
             document.getElementById("shirtInStock").innerHTML = "Available SFD Shirt Designs";
+        } else if (day < 1) {
+            document.getElementById("shirtInStock").innerHTML = "Less then 24 hours left until shirts are in stock.";
         } else {
-            document.getElementById("shirtInStock").innerHTML = Math.floor(shirtInStock / (1000 * 60 * 60 * 24)) + " days left until shirts are in stock.";
+            document.getElementById("shirtInStock").innerHTML = day + " days left until shirts are in stock.";
         }
 
     }, 1000);
