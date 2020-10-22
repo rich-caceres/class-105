@@ -48,11 +48,6 @@ function thisDate() {
             document.getElementById("date").innerHTML = "(" + day + " days left until Halloween!)";
         }
 
-        if (shirtInStock == today) {
-            document.getElementById("shirtInStock").innerHTML = "The following shirts are in stock!";
-        } else {
-            document.getElementById("shirtsInStock").innerHTML = Math.floor(shirtsInStock / (1000 * 60 * 60 * 24)) + " days left until shirts are in stock.";
-        }
 
     }, 1000);
 
