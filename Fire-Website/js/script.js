@@ -7,10 +7,9 @@ window.onload = function () {
 
 function thisDate() {
     
-    var today = new Date();
+   var today = new Date()
     var holloweenDay = new Date()
     holloweenDay = new Date(holloweenDay.getFullYear(), 9, 31, 00, 00, 00, 000);
-    var shirtInStock = new Date(2020, 9, 1, 00, 00, 00, 000);
     //halloweenDay.setFullYear(holloweenDay.getFullYear(), 9, 31);
     //var gradDay = new Date("Jul 10, 2020 18:00:00").getTime();
     if (today.getMonth() > holloweenDay.getMonth()) holloweenDay.setFullYear(holloweenDay.getFullYear() + 1, 9, 31);
@@ -19,12 +18,12 @@ function thisDate() {
     var countDown = setInterval(function () {
         //gets current time and updates it every second
         today = new Date();
+        //FOR TESTING today = new Date(2020, 9, 31);
 
         //calculate time left until holloween
         var timeLeft;
-        var shirtsInStock;
         timeLeft = holloweenDay.getTime() - today.getTime();
-        shirtsInStock = shirtInStock.getTime() - today.getTime();
+        
 
         //equations to generate counter
         var day = Math.floor(timeLeft / (1000 * 60 * 60 * 24));
@@ -38,9 +37,9 @@ function thisDate() {
         if (second < 10) second = "0" + second;
 
         //creates the message being generated under time left for graduation
-        if (holloweenDay == today) {
+        if (holloweenDay.getTime() == today.getTime()) {
             clearInterval(countDown);
-            timeLeft = "Halloween is here. If you're visiting Salem have fun, stay safe, and come say hi to the Firefighters! Please follow social distancing guidelines!";
+            timeLeft = "Happy Halloween! <br> If you're in the city please follow social distancing guidelines and wear your mask!";
             document.getElementById("date").innerHTML = timeLeft;
         } else if (day <= 1) {
             document.getElementById("date").innerHTML = "(" + hour + ":" + minute + ":" + second + " left until Halloween!)";
