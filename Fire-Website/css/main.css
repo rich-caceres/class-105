@@ -20,3 +20,9 @@
 .colorHeader {
     color: #a11518;
 }
+
+@media (max-width: 400px) {
+    .salemString {
+        display: none;
+    }
+}
