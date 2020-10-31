@@ -9,7 +9,7 @@ function thisDate() {
     
    var today = new Date()
     var holloweenDay = new Date()
-    holloweenDay = new Date(holloweenDay.getFullYear(), 9, 31, 00, 00, 00, 000);
+    holloweenDay = new Date(holloweenDay.getFullYear(), 9, 31);
     //halloweenDay.setFullYear(holloweenDay.getFullYear(), 9, 31);
     //var gradDay = new Date("Jul 10, 2020 18:00:00").getTime();
     if (today.getMonth() > holloweenDay.getMonth()) holloweenDay.setFullYear(holloweenDay.getFullYear() + 1, 9, 31);
@@ -37,10 +37,10 @@ function thisDate() {
         if (second < 10) second = "0" + second;
 
         //creates the message being generated under time left for graduation
-        if (holloweenDay.getTime() == today.getTime()) {
+        if (holloweenDay.getDay() == today.getDay()) {
             clearInterval(countDown);
-            timeLeft = "Happy Halloween! <br> If you're in the city please follow social distancing guidelines and wear your mask!";
-            document.getElementById("date").innerHTML = timeLeft;
+           var thisText = "Happy Halloween! <br> If you're in the city please follow social distancing guidelines and wear your mask!";
+            document.getElementById("date").innerHTML = thisText;
         } else if (day <= 1) {
             document.getElementById("date").innerHTML = "(" + hour + ":" + minute + ":" + second + " left until Halloween!)";
         } else {
