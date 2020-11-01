@@ -18,26 +18,28 @@ function thisDate() {
     var countDown = setInterval(function () {
         //gets current time and updates it every second
         today = new Date();
-        //FOR TESTING today = new Date(2020, 9, 31);
-
+        //today = new Date(2021, 9, 31);
+        //FOR TESTINGconsole.log(holloweenDay);
+        //console.log(today);
         //calculate time left until holloween
+
         var timeLeft;
         timeLeft = holloweenDay.getTime() - today.getTime();
-        
+        console.log(timeLeft);
 
         //equations to generate counter
-        var day = Math.floor(timeLeft / (1000 * 60 * 60 * 24));
+        var day = Math.ceil(timeLeft / (1000 * 60 * 60 * 24));
         var hour = Math.floor((timeLeft % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
         var minute = Math.floor((timeLeft % (1000 * 60 * 60)) / (1000 * 60));
         var second = Math.floor((timeLeft % (1000 * 60)) / 1000);
-
+        //console.log(day);
         //updates hours, minutes and seconds to show a 0 in front of them
         if (hour < 10) hour = "0" + hour;
         if (minute < 10) minute = "0" + minute;
         if (second < 10) second = "0" + second;
 
         //creates the message being generated under time left for graduation
-        if (holloweenDay.getDay() == today.getDay()) {
+        if (holloweenDay.getTime() == today.getTime()) {
             clearInterval(countDown);
            var thisText = "Happy Halloween! <br> If you're in the city please follow social distancing guidelines and wear your mask!";
             document.getElementById("date").innerHTML = thisText;
