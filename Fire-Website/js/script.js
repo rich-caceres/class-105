@@ -4,12 +4,12 @@ window.onload = function () {
 
     var today = new Date();
     if(today.getMonth() !== 11) document.getElementById("holidayDiv").style.visibility = 'hidden';
-    thisDate();
+    thisDate(today);
 }
 
-function thisDate() {
+function thisDate(today) {
     
-    var today = new Date();
+    //var today = new Date();
     var holloweenDay = new Date();
     var christmasDay = new Date();
     christmasDay = new Date(christmasDay.getFullYear(), 11, 25);
