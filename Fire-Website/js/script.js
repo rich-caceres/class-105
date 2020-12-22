@@ -7,13 +7,15 @@ window.onload = function () {
 
 function thisDate() {
     
-   var today = new Date()
-    var holloweenDay = new Date()
+    var today = new Date();
+    var holloweenDay = new Date();
+    var christmasDay = new Date();
+    christmasDay = new Date(christmasDay.getFullYear(), 11, 25);
     holloweenDay = new Date(holloweenDay.getFullYear(), 9, 31);
     //halloweenDay.setFullYear(holloweenDay.getFullYear(), 9, 31);
     //var gradDay = new Date("Jul 10, 2020 18:00:00").getTime();
     if (today.getMonth() > holloweenDay.getMonth()) holloweenDay.setFullYear(holloweenDay.getFullYear() + 1, 9, 31);
-
+    if (today.getMonth() > christmasDay.getMonth()) christmasDay.setFullYear(christmasDay.getFullYear() + 1, 11, 25);
     //sets interval to update the counter
     var countDown = setInterval(function () {
         //gets current time and updates it every second
@@ -25,7 +27,7 @@ function thisDate() {
 
         var timeLeft;
         timeLeft = holloweenDay.getTime() - today.getTime();
-        console.log(timeLeft);
+        //console.log(timeLeft);
 
         //equations to generate counter
         var day = Math.ceil(timeLeft / (1000 * 60 * 60 * 24));
