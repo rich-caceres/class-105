@@ -1,8 +1,10 @@
 
 
 window.onload = function () {
-    thisDate();
 
+    var today = new Date();
+    if(today.getMonth() !== 11) document.getElementById("holidayDiv").style.visibility = 'hidden';
+    thisDate();
 }
 
 function thisDate() {
@@ -15,7 +17,7 @@ function thisDate() {
     //halloweenDay.setFullYear(holloweenDay.getFullYear(), 9, 31);
     //var gradDay = new Date("Jul 10, 2020 18:00:00").getTime();
     if (today.getMonth() > holloweenDay.getMonth()) holloweenDay.setFullYear(holloweenDay.getFullYear() + 1, 9, 31);
-    if (today.getMonth() > christmasDay.getMonth()) christmasDay.setFullYear(christmasDay.getFullYear() + 1, 11, 25);
+ 
     //sets interval to update the counter
     var countDown = setInterval(function () {
         //gets current time and updates it every second
