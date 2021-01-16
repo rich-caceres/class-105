@@ -254,7 +254,7 @@
 					<div class="card-body text-center">
 						<a class="mb-1" href="http://www.firenews.org/listing.html" target="_blank"><h3>Apparatus pictures retrieved from FireNews.org</h3></a>
 
-						<div class="owl-carousel owl-theme">
+						<div class="owl1 owl-carousel owl-theme">
 							<div>
 								<h3>2005 KME Predator</h3>
 								<picture>
@@ -262,35 +262,40 @@
 									<img class="item" src="img/E1/SalemE1JG.webp" alt="Engine1" />
 								</picture> 
 							</div>
-							<div> 
+							<div>
+								<h3>2016 Ferrara Igniter</h3>
 								<picture>
 									<source srcset="img/E2/SalemE2new16MEB.png" type="image/png" />
 									<img class="item" src="img/E2/SalemE2new16MEB.webp" alt="Engine2"  />
 								</picture> 
 							</div>
-							<div> 
+							<div>
+								<h3>2008 KME</h3>
 								<picture>
 									<source srcset="img/E4/SalemE4new09.png" type="image/png" />
 									<img class="item" src="img/E4/SalemE4new09.webp" alt="Engine4"/>
 								</picture> 
 							</div>
-							<div> 
+							<div>
+								<h3>2018 Ferrara Igniter</h3>
 								<picture>
 									<source srcset="img/E5/SalemE5new18.png" typeof="image/png" />
 									<img class="item" src="img/E5/SalemE5new18.webp" alt="Engine5"/>
 								</picture> 
 							</div>
-							<div> 
+							<div>
+								<h3>1995 Pierce Saber</h3>
 								<picture>
 									<source srcset="img/E6/SalemE5Ernest.png" type="image/png" />
 									<img class="item" src="img/E6/SalemE5Ernest.webp" alt="Engine6"/>
 								</picture> 
 							</div>
-							<div> 
+							<div>
+								<h3>2013 Pierce Arrow XT 95'</h3>
 								<picture>
 									<source srcset="img/TL2/SalemTL2JG.png" type="image/png" />
-									<img class="item" src="img/TL2/SalemTL2JG.webp" alt="Ladder2"/>
-								</picture> 
+									<img class="item" src="img/TL2/SalemTL2JG.webp" alt="Ladder2" />
+								</picture>
 							</div>
 							<div> 
 								<picture>
@@ -439,7 +444,7 @@
 
 											Thanks to the generosity of the two principal private partners, Footprint at Salem Harbor Power Station and the South Essex Sewerage District, The Salem Fire Department Special Operations Team stands ready and well equipped to serve the city of Salem and the surrounding north shore region.
 										</p>
-										<div class="owl-carousel owl-theme">
+										<div class="owl2 owl-carousel owl-theme">
 											<div> <img class="item" src="img/SpecOps/ops1.jpg" /> </div>
 											<div> <img class="item" src="img/SpecOps/ops2.jpg" /> </div>
 											<div> <img class="item" src="img/SpecOps/ops3.jpg" /> </div>
@@ -556,7 +561,49 @@
 	<script src="js/owlcarousel/owl.carousel.min.js"></script>
 	<script type="text/javascript" src="js/script.js"></script>
 	<script>
-		$(".owl-carousel").owlCarousel({
+		$(".owl1").owlCarousel({
+			itemsdesktop: [1199, 4],
+			itemsdesktopSmall: [980, 3],
+			itemstablet: [768, 2],
+			itemsTabletSmall: false,
+			itemsMobile: [479, 1],
+			singleitem: true,
+			slidespeed: 400,
+
+			//autoplay
+			autoplay: true,
+			autoplayHoverPause: true,
+
+			//margin and loop
+			margin: 7,
+			loop: true,
+
+			// Navigation
+			navigation: false,
+			navigationtext: ["prev", "next"],
+			rewindbav: true,
+			scrollperpage: false,
+
+			//Pagination
+			pagination: true,
+			paginationnumbers: false,
+
+			baseClass: "owl-carousel",
+			theme: "owl-theme",
+
+			//responsive
+			responsive: {
+				0: {
+					items: 1
+				},
+				1100: {
+					items: 2
+				}
+			}
+
+		});</script>
+		<script><
+		$(".owl2").owlCarousel({
 			itemsdesktop: [1199, 4],
 			itemsdesktopSmall: [980, 3],
 			itemstablet: [768, 2],
