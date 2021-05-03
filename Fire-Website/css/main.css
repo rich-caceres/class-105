@@ -163,3 +163,15 @@
         transform: rotate3d(0, 0, 1, 360deg);
     }
 }
+
+@media (max-width: 500px) {
+    #specOpsPage {
+        display: none;
+    }
+}
+
+@media (max-width: 980px){
+    .swiper-plugin-pagination {
+        display: none;
+    }
+}
