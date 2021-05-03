@@ -370,7 +370,7 @@
 											<div class="swiper-slide"> <img class="special-op" src="img/SpecOps/ops6.jpg" /> </div>
 											<div class="swiper-slide"> <img class="special-op" src="img/SpecOps/ops7.jpg" /> </div>
 										</div>
-										<div class="swiper-plugin-pagination2"></div>
+										<div class="swiper-plugin-pagination2" id="specOpsPage"></div>
 									</div>
 								</div>
 							</div>
@@ -481,7 +481,13 @@
 	<script>
 
 		var swiper2 = new Swiper("#swiper2", {
-			centeredSlides: true
+            pagination: {
+                el: "#specOpsPage",
+                clickable: true,
+                bulletClass: "specOp__item",
+                bulletActiveClass: "is-active"
+            },
+            plugins: [SwiperPluginPagination]
 		});
 
 		var swiper1 = new Swiper("#apparatusSwiper", {
