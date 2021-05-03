@@ -42,9 +42,42 @@
     cursor: grab;
 }
 
+.special-op{
+    width:80%;
+    height:80%
+}
+
 .swiper-slide picture {
     display: block;
     width: 100%;
     height: 100%;
     object-fit:cover;
+}
+
+/* plugin pagination */
+.swiper-plugin-pagination {
+
+    display: block;
+    position: absolute;
+    top: 50%;
+    right: 2.2rem;
+    width: 0.5rem;
+    transform: translateY(-50%);
+ 
+    &__item{
+    display: block;
+    margin: 100% 0;
+    width: 100%;
+    padding-top: 100%;
+    height: 0;
+    border-radius: 50% !important;
+    border: none;
+    background: #fff;
+    transition: background ease 0.2s;
+    cursor: pointer;
+    }
+
+    &__item.is-active {
+    background: #333;
+    }
 }
