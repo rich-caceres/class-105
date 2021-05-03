@@ -127,6 +127,7 @@
 		</div>
 	</div>
 	<!--end of holiday flyer-->
+	
 	<!--Beginning of mission statement and counter-->
 	<div class="container-fluid">
 		<div class="row pt-3">
@@ -255,8 +256,10 @@
 						<a class="mb-1" href="http://www.firenews.org/listing.html" target="_blank"><h3>Apparatus pictures retrieved from FireNews.org</h3></a>
 
 						<!--<div class="row owl1 owl-carousel owl-theme pt-2">-->
+
 						<div class="swiper-container" id="apparatusSwiper">
 							<div class="swiper-wrapper" id="apparatusButton">
+
 								<div class="swiper-slide">
 									<h3>2005 KME Predator</h3>
 									<picture>
@@ -358,7 +361,7 @@
 									</p>
 									<div class="swiper-container" id="swiper2">
 										<div class="swiper-wrapper">
-									<!--<div class="owl2 owl-carousel owl-theme">-->
+											<!--<div class="owl2 owl-carousel owl-theme">-->
 											<div class="swiper-slide"> <img class="special-op" src="img/SpecOps/ops1.jpg" /> </div>
 											<div class="swiper-slide"> <img class="special-op" src="img/SpecOps/ops2.jpg" /> </div>
 											<div class="swiper-slide"> <img class="special-op" src="img/SpecOps/ops3.jpg" /> </div>
@@ -477,30 +480,29 @@
 	<script src="css-element-queries-1.2.1/src/ElementQueries.js"></script>
 	<script>
 
-		var swiper2 = new Swiper("#swiper2",{
-			centeredSlides:true
+		var swiper2 = new Swiper("#swiper2", {
+			centeredSlides: true
 		});
 
 		var swiper1 = new Swiper("#apparatusSwiper", {
-		centeredSlides: true,
-		pagination: {
-          el: ".swiper-plugin-pagination",
-          clickable: true,
-          bulletClass: "swiper-plugin-pagination__item",
-          bulletActiveClass: "is-active"
-        },
-        plugins: [SwiperPluginPagination]
+			pagination: {
+				el: ".swiper-plugin-pagination",
+				clickable: true,
+				bulletClass: "swiper-plugin-pagination__item",
+				bulletActiveClass: "is-active"
+			},
+			plugins: [SwiperPluginPagination]
 
 		});
 
-		new ResizeSensor(jQuery('#SPECOP'), () =>{
+		new ResizeSensor(jQuery('#SPECOP'), () => {
 			swiper2.update(),
-			swiper2.updateSize()
+				swiper2.updateSize()
 		})
 
 		new ResizeSensor(jQuery('#collapseTwo'), () => {
 			swiper1.update(),
-			swiper1.updateSize()
+				swiper1.updateSize()
 		})
 
 	</script>
@@ -575,7 +577,7 @@
 			paginationnumbers: false,
 
 			baseClass: "owl-carousel",
-            theme: "owl-theme",
+			theme: "owl-theme",
 
 			//responsive
 			responsive: {
@@ -587,8 +589,8 @@
 				},
 				1100: {
 					items: 3
-                }
-            }
+				}
+			}
 
 		});</script>
 	<!--Footer-->
