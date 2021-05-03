@@ -1,3 +1,12 @@
+var swiper3 = new Swiper('#carouselSwiper', {
+
+	autoplay: {
+		delay: 2500
+	},
+
+	plugins: [SwiperPluginAutoPlay]
+});
+
 var swiper2 = new Swiper("#swiper2", {
 
 	autoplay: {
@@ -27,6 +36,13 @@ var swiper1 = new Swiper("#apparatusSwiper", {
 	plugins: [SwiperPluginPagination, SwiperPluginAutoPlay]
 
 });
+
+window.addEventListener('resize', function(){
+
+	swiper3.update(),
+	swiper3.updateSize()
+
+})
 
 new ResizeSensor(jQuery('#SPECOP'), () => {
 	swiper2.update(),
