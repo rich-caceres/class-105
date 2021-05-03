@@ -261,66 +261,67 @@
 									<h3>2005 KME Predator</h3>
 									<picture>
 										<source srcset="img/E1/SalemE1JG.png" type="image/png" />
-										<img class="item" src="img/E1/SalemE1JG.webp" alt="Engine1" />
+										<img class="img-fluid" src="img/E1/SalemE1JG.webp" alt="Engine1" />
 									</picture>
 								</div>
 								<div class="swiper-slide">
 									<h3>2016 Ferrara Igniter</h3>
 									<picture>
 										<source srcset="img/E2/SalemE2new16MEB.png" type="image/png" />
-										<img class="item" src="img/E2/SalemE2new16MEB.webp" alt="Engine2" />
+										<img class="img-fluid" src="img/E2/SalemE2new16MEB.webp" alt="Engine2" />
 									</picture>
 								</div>
 								<div class="swiper-slide">
 									<h3>2008 KME</h3>
 									<picture>
 										<source srcset="img/E4/SalemE4new09.png" type="image/png" />
-										<img class="item" src="img/E4/SalemE4new09.webp" alt="Engine4" />
+										<img class="img-fluid" src="img/E4/SalemE4new09.webp" alt="Engine4" />
 									</picture>
 								</div>
 								<div class="swiper-slide">
 									<h3>2018 Ferrara Igniter</h3>
 									<picture>
 										<source srcset="img/E5/SalemE5new18.png" typeof="image/png" />
-										<img class="item" src="img/E5/SalemE5new18.webp" alt="Engine5" />
+										<img class="img-fluid" src="img/E5/SalemE5new18.webp" alt="Engine5" />
 									</picture>
 								</div>
 								<div class="swiper-slide">
 									<h3>1995 Pierce Saber</h3>
 									<picture>
 										<source srcset="img/E6/SalemE5Ernest.png" type="image/png" />
-										<img class="item" src="img/E6/SalemE5Ernest.webp" alt="Engine6" />
+										<img class="img-fluid" src="img/E6/SalemE5Ernest.webp" alt="Engine6" />
 									</picture>
 								</div>
 								<div class="swiper-slide">
 									<h3>2013 Pierce Arrow XT 95'</h3>
 									<picture>
 										<source srcset="img/TL2/SalemTL2JG.png" type="image/png" />
-										<img class="item" src="img/TL2/SalemTL2JG.webp" alt="Ladder2" />
+										<img class="img-fluid" src="img/TL2/SalemTL2JG.webp" alt="Ladder2" />
 									</picture>
 								</div>
 								<div class="swiper-slide">
 									<h3>2000 Pierce 105’ RMA</h3>
 									<picture>
 										<source srcset="img/L1/SalemL1.png" type="image/png" />
-										<img class="item" src="img/L1/SalemL1.webp" alt="Ladder1" />
+										<img class="img-fluid" src="img/L1/SalemL1.webp" alt="Ladder1" />
 									</picture>
 								</div>
 								<div class="swiper-slide">
 									<h3>2016 Chevy Silverado 2500HD 4x4</h3>
 									<picture>
 										<source srcset="img/M1/SalemM1new16.png" type="image/png" />
-										<img src="img/M1/SalemM1new16.webp" alt="M1" class="img-fluid mb-1" />
+										<img class="img-fluid" src="img/M1/SalemM1new16.webp" alt="M1" class="img-fluid mb-1" />
 									</picture>
 								</div>
 								<div class="swiper-slide">
 									<h3>2015 Chevy Tahoe 4X4</h3>
 									<picture>
 										<source srcset="img/C2/SalemC2new15Toz.png" type="image/png" />
-										<img src="img/C2/SalemC2new15Toz.webp" alt="Car2" class="img-fluid mb-1" />
+										<img class="img-fluid" src="img/C2/SalemC2new15Toz.webp" alt="Car2" class="img-fluid mb-1" />
 									</picture>
 								</div>
 							</div>
+							<div class="swiper-plugin-pagination"></div>
 						</div>
 					</div>
 				</div>
@@ -457,6 +458,7 @@
 									</p>
 								</div>
 							</div>
+							<div class="swiper-plugin-pagination"></div>
 						</div>
 					</div>
 				</div>
@@ -468,12 +470,20 @@
 	<script src="js/jquery.min.js"></script>
 	<script src="js/owlcarousel/owl.carousel.min.js"></script>
 	<script src="https://unpkg.com/tiny-swiper@latest"></script>
+	<script src="https://unpkg.com/tiny-swiper@latest/lib/modules/pagination.min.js"></script>
 	<script type="text/javascript" src="js/script.js"></script>
 	<script src="css-element-queries-1.2.1/src/ResizeSensor.js"></script>
 	<script src="css-element-queries-1.2.1/src/ElementQueries.js"></script>
 	<script>
 		var swiper = new Swiper(".swiper-container", {
 
+		pagination: {
+          el: ".swiper-plugin-pagination",
+          clickable: true,
+          bulletClass: "swiper-plugin-pagination__item",
+          bulletActiveClass: "is-active"
+        },
+		plugins: [SwiperPluginPagination],
 		centeredSlides: true
 
 		});
