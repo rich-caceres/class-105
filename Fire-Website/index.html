@@ -127,7 +127,6 @@
 		</div>
 	</div>
 	<!--end of holiday flyer-->
-	
 	<!--Beginning of mission statement and counter-->
 	<div class="container-fluid">
 		<div class="row pt-3">
@@ -475,29 +474,39 @@
 	<script src="js/owlcarousel/owl.carousel.min.js"></script>
 	<script src="https://unpkg.com/tiny-swiper@latest"></script>
 	<script src="https://unpkg.com/tiny-swiper@latest/lib/modules/pagination.min.js"></script>
+	<script src="https://unpkg.com/tiny-swiper@latest/lib/modules/autoPlay.min.js"></script>
 	<script type="text/javascript" src="js/script.js"></script>
 	<script src="css-element-queries-1.2.1/src/ResizeSensor.js"></script>
 	<script src="css-element-queries-1.2.1/src/ElementQueries.js"></script>
 	<script>
 
 		var swiper2 = new Swiper("#swiper2", {
-            pagination: {
-                el: "#specOpsPage",
-                clickable: true,
-                bulletClass: "specOp__item",
-                bulletActiveClass: "is-active"
+
+			autoplay: {
+				delay:3500
             },
-            plugins: [SwiperPluginPagination]
+
+			pagination: {
+				el: "#specOpsPage",
+				clickable: true,
+				bulletClass: "specOp__item",
+				bulletActiveClass: "is-active"
+			},
+			plugins: [SwiperPluginPagination, SwiperPluginAutoPlay]
 		});
 
 		var swiper1 = new Swiper("#apparatusSwiper", {
+            autoplay: {
+                delay: 3500
+			},
+
 			pagination: {
 				el: ".swiper-plugin-pagination",
 				clickable: true,
 				bulletClass: "swiper-plugin-pagination__item",
 				bulletActiveClass: "is-active"
 			},
-			plugins: [SwiperPluginPagination]
+			plugins: [SwiperPluginPagination, SwiperPluginAutoPlay]
 
 		});
 
