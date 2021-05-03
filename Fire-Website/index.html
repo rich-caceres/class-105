@@ -437,7 +437,6 @@
 										public buildings, or apartment buildings that contain 6 or more dwellings.
 										If a smoke detector is activated at your house or apartment be sure to call 9-1-1 to report it. Never assume someone else has called to report the alarm.
 									</p>
-
 								</div>
 							</div>
 							<div class="col-sm text-center pt-2">
@@ -482,8 +481,8 @@
 		const button = document.getElementById("apparatusButton");
 
 		new ResizeSensor(jQuery('#collapseTwo'), () => {
-			// TODO：debounce or something else
-			swiper.update()
+			swiper.update(),
+			swiper.updateSize()
 		})
 
 	</script>
