@@ -1,5 +1,7 @@
 var swiper3 = new Swiper('#carouselSwiper', {
 
+	speed: 2000,
+
 	autoplay: {
 		delay: 2500
 	},
