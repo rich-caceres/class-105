@@ -1,3 +1,8 @@
+
+var picHtml = '<div class="swiper-slide img"><picture><source srcset="img/SlideShow/TL2.png" type="image/png" /><img src="img/SlideShow/TL2.webp" alt="Tower2" class="img-fluid d-block w-100 imgpreset" /></picture ></div ><div class="swiper-slide img"><picture><source srcset="img/SlideShow/ActionShot1.png" type="image/png" /><img src="img/SlideShow/ActionShot1.webp" class="img-fluid d-block w-100 imgpreset" /></picture></div><div class="swiper-slide img"><picture><source srcset="img/SlideShow/HonorGuardcrop.png" type="image/png" /><img src="img/SlideShow/HonorGuardcrop.webp" class="img-fluid d-block w-100 imgpreset" /></picture></div>'
+
+document.getElementById('slideImageShow').innerHTML = picHtml
+
 var swiper3 = new Swiper('#carouselSwiper', {
 
 	speed: 2000,
