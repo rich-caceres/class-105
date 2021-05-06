@@ -33,7 +33,7 @@ function Shopify() {
                     "product": {
                         "styles": {
                             "product": {
-                                "@media (min-width: 601px)": {
+                                "@media (min-width: 700px)": {
                                     "max-width": "calc(25% - 20px)",
                                     "margin-left": "20px",
                                     "margin-bottom": "50px",
