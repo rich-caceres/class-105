@@ -3,31 +3,9 @@ var picHtml = '<div class="swiper-slide img"><picture><source srcset="img/SlideS
 
 document.getElementById('slideImageShow').innerHTML = picHtml
 
-var swiper3 = new Swiper('#carouselSwiper', {
+var swiper3 = new Swiper('#carouselSwiper', {speed: 2000,autoplay: {delay: 2500},plugins: [SwiperPluginAutoPlay]});
 
-	speed: 2000,
-
-	autoplay: {
-		delay: 2500
-	},
-
-	plugins: [SwiperPluginAutoPlay]
-});
-
-var swiper2 = new Swiper("#swiper2", {
-
-	autoplay: {
-		delay: 3500
-	},
-
-	pagination: {
-		el: "#specOpsPage",
-		clickable: true,
-		bulletClass: "specOp__item",
-		bulletActiveClass: "is-active"
-	},
-	plugins: [SwiperPluginPagination, SwiperPluginAutoPlay]
-});
+var swiper2 = new Swiper("#swiper2", {autoplay: {delay: 3500},pagination: {el: "#specOpsPage",clickable: true,bulletClass: "specOp__item",bulletActiveClass: "is-active"},plugins: [SwiperPluginPagination, SwiperPluginAutoPlay]});
 
 var swiper1 = new Swiper("#apparatusSwiper", {
 	autoplay: {
