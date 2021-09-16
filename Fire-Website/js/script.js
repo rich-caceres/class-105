@@ -45,7 +45,7 @@ function thisDate(today) {
         //creates the message being generated under time left for graduation
         if (holloweenDay.getTime() == today.getTime()) {
             clearInterval(countDown);
-           var thisText = "Happy Halloween! <br> If you're in the city please follow social distancing guidelines and wear your mask!";
+           var thisText = "Happy Halloween! <br> Be safe and enjoy your time in Witch City!!";
             document.getElementById("date").innerHTML = thisText;
         } else if (day <= 1) {
             document.getElementById("date").innerHTML = "(" + hour + ":" + minute + ":" + second + " left until Halloween!)";
