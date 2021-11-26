@@ -22,6 +22,8 @@ function thisDate(today) {
     var countDown = setInterval(function () {
         //gets current time and updates it every second
         today = new Date();
+        //var holloweenDay = new Date();
+        holloweenDay = new Date(holloweenDay.getFullYear(), 9, 31,today.getHours(), today.getMinutes(), today.getSeconds(), today.getMilliseconds());
         //today = new Date(2021, 9, 31);
         //FOR TESTINGconsole.log(holloweenDay);
         //console.log(today);
@@ -29,6 +31,7 @@ function thisDate(today) {
 
         var timeLeft;
         timeLeft = holloweenDay.getTime() - today.getTime();
+        todaysMonth = today.getMonth();
         //console.log(timeLeft);
 
         //equations to generate counter
@@ -41,7 +44,7 @@ function thisDate(today) {
         if (hour < 10) hour = "0" + hour;
         if (minute < 10) minute = "0" + minute;
         if (second < 10) second = "0" + second;
-
+        //console.log(holloweenDay.getTime());
         //creates the message being generated under time left for graduation
         if (holloweenDay.getTime() == today.getTime()) {
             clearInterval(countDown);
