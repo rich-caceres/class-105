@@ -2,8 +2,10 @@
   "ExpandedNodes": [
     "",
     "\\css",
+    "\\img",
+    "\\img\\SlideShow",
     "\\js"
   ],
-  "SelectedNode": "\\js\\script.js",
+  "SelectedNode": "\\js\\swiperInitFile.js",
   "PreviewInSolutionExplorer": false
 }
