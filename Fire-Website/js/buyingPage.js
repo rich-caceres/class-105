@@ -14,7 +14,7 @@ function buyingPageCounter() {
 
         if (shirtsInStock.getTime() < today.getTime()) {
             clearInterval(shirtCountdown);
-            document.getElementById("shirtInStock").innerHTML = "Available SFD Shirt Designs";
+            document.getElementById("shirtInStock").innerHTML = "Available SFD Shirt & Patch Designs";
         } else if (day < 1) {
             document.getElementById("shirtInStock").innerHTML = "Less then 24 hours left until shirts are in stock.";
         } else {
