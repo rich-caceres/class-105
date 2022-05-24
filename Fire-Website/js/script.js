@@ -9,7 +9,7 @@ window.onload = function () {
 
 function Visibility() {
     //TODO set id for history visibility
-    Document.getElementById("").style.visibility = "hidden";
+    Document.getElementById("history").style.visibility = "hidden";
 }
 
 
