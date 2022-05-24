@@ -7,12 +7,6 @@ window.onload = function () {
     thisDate(today);
 }
 
-function Visibility() {
-    //TODO set id for history visibility
-    Document.getElementById("history").style.visibility = "hidden";
-}
-
-
 function thisDate(today) {
     
     //var today = new Date();
