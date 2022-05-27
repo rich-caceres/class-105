@@ -4,5 +4,5 @@ window.onload = function () {
 
 function Visibility() {
     //TODO set id for history visibility
-    document.getElementById("history").style.visibility = "hidden";
+    document.getElementById("history").style.display = "none";
 }
