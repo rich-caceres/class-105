@@ -1,11 +1,15 @@
 
 
-window.onload = function () {
+/*window.onload = function () {
 
     var today = new Date();
     if(today.getMonth() === 11) document.getElementById("holidayDiv").style.visibility = 'visible';
     thisDate(today);
-}
+}*/
+
+var today = new Date();
+if (today.getMonth() === 11) document.getElementById("holidayDiv").style.visibility = 'visible';
+thisDate(today);
 
 function thisDate(today) {
     
