@@ -1,7 +1,7 @@
-﻿################################################################################
+################################################################################
 # This .gitignore file was automatically created by Microsoft(R) Visual Studio.
 ################################################################################
 
 /Fire-Website/.vs/Fire-Website/FileContentIndex
 /Fire-Website/.vs/Fire-Website/v17
-.vs/
+*/.vs/*
